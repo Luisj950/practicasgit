@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candidatos</title>
+    <title>Biografía de Candidatos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,26 +19,24 @@
         }
         .content {
             padding: 20px;
+            text-align: center;
         }
-        .btn-home, .btn-candidato {
+        .btn-candidato {
             background-color: #0073e6;
             color: white;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
+            margin-top: 20px;
             display: inline-block;
-            margin-bottom: 20px;
-            margin-right: 10px;
         }
-        .btn-home:hover, .btn-candidato:hover {
+        .btn-candidato:hover {
             background-color: #005bb5;
         }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #555;
-            line-height: 1.6;
+        .candidato-content {
+            display: none;
+            padding: 20px;
+            text-align: left;
         }
         .biografia img {
             width: 100%;
@@ -46,38 +44,94 @@
             border-radius: 10px;
             margin-top: 20px;
         }
+        .foro {
+            margin-top: 40px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .foro h3 {
+            color: #333;
+        }
+        .foro textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .foro button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .foro button:hover {
+            background-color: #005bb5;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Biografía de Daniel Noboa</h1>
+    <h1>Elige un Candidato</h1>
 </header>
 
 <div class="content">
+    <a href="javascript:void(0);" class="btn-candidato" onclick="mostrarCandidato('daniel')">Candidato 1 - Daniel Noboa</a>
+    <a href="javascript:void(0);" class="btn-candidato" onclick="mostrarCandidato('luisa')">Candidato 2 - Luisa González</a>
+</div>
+
+<!-- Contenido de Daniel Noboa -->
+<div id="daniel" class="candidato-content">
+    <h2>Daniel Noboa</h2>
+    <p>Daniel Noboa Pontón es un empresario ecuatoriano y candidato presidencial, conocido por su liderazgo y compromiso en la creación de soluciones para el crecimiento económico y social del país. Es hijo de Álvaro Noboa, un destacado empresario de Ecuador, y ha sido parte activa del desarrollo empresarial en varias industrias.</p>
+    <p>Con una educación de alto nivel en el ámbito empresarial y una visión orientada al futuro, Daniel ha impulsado proyectos que buscan la innovación y la sostenibilidad en sectores clave para Ecuador. Su enfoque está en mejorar la infraestructura, la educación, y las oportunidades para los ciudadanos, con una clara intención de mejorar la calidad de vida en todo el país.</p>
+    <p>Durante su carrera, ha demostrado ser un defensor de la transparencia y la responsabilidad en la política, buscando siempre el bienestar de los ecuatorianos. A lo largo de su vida, ha acumulado una vasta experiencia en el ámbito empresarial, lo que le ha permitido desarrollar habilidades para liderar y tomar decisiones estratégicas en momentos clave.</p>
+    <img src="ruta_a_la_fotografia_daniel.jpg" alt="Fotografía de Daniel Noboa">
     
-    <a href="#candidato1" class="btn-candidato">Candidato 1</a>
-
-    <!-- Sección de Descripción Principal -->
-    <div id="home">
-        <h2>Bienvenido a la Página de Candidatos</h2>
-        <p>Este sitio está diseñado para presentar la biografía y las propuestas de diferentes candidatos presidenciales. A través de nuestra plataforma, podrás conocer en detalle a cada candidato, sus valores, su historia y sus planes para el futuro. Cada candidato tiene un perfil completo que incluye su biografía, su imagen y un enlace para acceder a más información sobre ellos.</p>
-
-        <p>Haz clic en el botón "Candidato 1" para conocer más sobre Daniel Noboa y su propuesta para el país.</p>
-    </div>
-
-    <!-- Sección de Candidato 1 -->
-    <div id="candidato1" class="biografia">
-        <h2>Biografía de Candidato 1 - Daniel Noboa</h2>
-        <p>Daniel Noboa Pontón es un empresario ecuatoriano y candidato presidencial, conocido por su liderazgo y compromiso en la creación de soluciones para el crecimiento económico y social del país. Es hijo de Álvaro Noboa, un destacado empresario de Ecuador, y ha sido parte activa del desarrollo empresarial en varias industrias.</p>
-
-        <p>Con una educación de alto nivel en el ámbito empresarial y una visión orientada al futuro, Daniel ha impulsado proyectos que buscan la innovación y la sostenibilidad en sectores clave para Ecuador. Su enfoque está en mejorar la infraestructura, la educación, y las oportunidades para los ciudadanos, con una clara intención de mejorar la calidad de vida en todo el país.</p>
-
-        <p>Durante su carrera, ha demostrado ser un defensor de la transparencia y la responsabilidad en la política, buscando siempre el bienestar de los ecuatorianos. A lo largo de su vida, ha acumulado una vasta experiencia en el ámbito empresarial, lo que le ha permitido desarrollar habilidades para liderar y tomar decisiones estratégicas en momentos clave.</p>
-
-        <img src="./President_Noboa_of_Ecuador_in_April_of_2024.jpg" alt="Fotografía de Daniel Noboa">
+    <!-- Foro de Daniel Noboa -->
+    <div class="foro">
+        <h3>Deja tu comentario sobre Daniel Noboa</h3>
+        <textarea placeholder="Escribe tu comentario..."></textarea><br>
+        <button>Publicar Comentario</button>
     </div>
 </div>
 
+<!-- Contenido de Luisa González -->
+<div id="luisa" class="candidato-content">
+    <h2>Luisa González</h2>
+    <p>Luisa González es una política ecuatoriana y candidata presidencial. Se ha destacado por su trabajo en la lucha por los derechos de las mujeres y los sectores más vulnerables del país. Con una formación en derecho y una trayectoria en el ámbito social, ha sido una voz clave en la promoción de políticas públicas para la igualdad de género y el bienestar social.</p>
+    <p>A lo largo de su carrera, Luisa ha defendido el acceso a la educación, la salud y el empleo para los grupos más necesitados, proponiendo reformas en la política social y económica del país. Su enfoque está en crear una sociedad más justa y equitativa, promoviendo la participación ciudadana y la transparencia en el gobierno.</p>
+    <p>Luisa ha sido un pilar en diversas iniciativas comunitarias y, como líder política, ha demostrado ser una defensora incansable de los derechos humanos y el desarrollo de la mujer en Ecuador.</p>
+    <img src="ruta_a_la_fotografia_luisa.jpg" alt="Fotografía de Luisa González">
+
+    <!-- Foro de Luisa González -->
+    <div class="foro">
+        <h3>Deja tu comentario sobre Luisa González</h3>
+        <textarea placeholder="Escribe tu comentario..."></textarea><br>
+        <button>Publicar Comentario</button>
+    </div>
+</div>
+
+<script>
+    // Función para mostrar la biografía y ocultar las demás
+    function mostrarCandidato(candidato) {
+        // Ocultar todos los candidatos
+        var candidatos = document.querySelectorAll('.candidato-content');
+        for (var i = 0; i < candidatos.length; i++) {
+            candidatos[i].style.display = 'none';
+        }
+
+        // Mostrar el candidato seleccionado
+        document.getElementById(candidato).style.display = 'block';
+    }
+</script>
+
 </body>
 </html>
+
