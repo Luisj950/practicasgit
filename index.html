@@ -84,10 +84,12 @@
 <div class="content">
     <a href="javascript:void(0);" class="btn-candidato" onclick="mostrarCandidato('daniel')">Candidato 1 - Daniel Noboa</a>
     <a href="javascript:void(0);" class="btn-candidato" onclick="mostrarCandidato('luisa')">Candidato 2 - Luisa González</a>
+    <a href="javascript:void(0);" class="btn-candidato" onclick="mostrarCandidato('andrea')">Candidato 3 - Andrea González</a>
 </div>
 
 <!-- Contenido de Daniel Noboa -->
 <div id="daniel" class="candidato-content">
+    <a href="javascript:void(0);" class="btn-candidato" onclick="mostrarCandidato('home')">Regresar a la Página Principal</a>
     <h2>Daniel Noboa</h2>
     <p>Daniel Noboa Pontón es un empresario ecuatoriano y candidato presidencial, conocido por su liderazgo y compromiso en la creación de soluciones para el crecimiento económico y social del país. Es hijo de Álvaro Noboa, un destacado empresario de Ecuador, y ha sido parte activa del desarrollo empresarial en varias industrias.</p>
     <p>Con una educación de alto nivel en el ámbito empresarial y una visión orientada al futuro, Daniel ha impulsado proyectos que buscan la innovación y la sostenibilidad en sectores clave para Ecuador. Su enfoque está en mejorar la infraestructura, la educación, y las oportunidades para los ciudadanos, con una clara intención de mejorar la calidad de vida en todo el país.</p>
@@ -104,6 +106,7 @@
 
 <!-- Contenido de Luisa González -->
 <div id="luisa" class="candidato-content">
+    <a href="javascript:void(0);" class="btn-candidato" onclick="mostrarCandidato('home')">Regresar a la Página Principal</a>
     <h2>Luisa González</h2>
     <p>Luisa González es una política ecuatoriana y candidata presidencial. Se ha destacado por su trabajo en la lucha por los derechos de las mujeres y los sectores más vulnerables del país. Con una formación en derecho y una trayectoria en el ámbito social, ha sido una voz clave en la promoción de políticas públicas para la igualdad de género y el bienestar social.</p>
     <p>A lo largo de su carrera, Luisa ha defendido el acceso a la educación, la salud y el empleo para los grupos más necesitados, proponiendo reformas en la política social y económica del país. Su enfoque está en crear una sociedad más justa y equitativa, promoviendo la participación ciudadana y la transparencia en el gobierno.</p>
@@ -118,6 +121,30 @@
     </div>
 </div>
 
+<!-- Contenido de Andrea González -->
+<div id="andrea" class="candidato-content">
+    <a href="javascript:void(0);" class="btn-candidato" onclick="mostrarCandidato('home')">Regresar a la Página Principal</a>
+    <h2>Andrea González</h2>
+    <p>Andrea González es una política ecuatoriana comprometida con el desarrollo social y económico de Ecuador. Ha dedicado su vida al activismo por los derechos humanos y el fortalecimiento de las políticas públicas que promuevan la igualdad de oportunidades para todos los ciudadanos.</p>
+    <p>Con una sólida formación académica y experiencia en diversas organizaciones sociales, Andrea ha defendido las políticas que favorecen la educación, la justicia social y el bienestar de los más necesitados. Su compromiso con el cambio y el progreso del país la ha llevado a postularse como candidata presidencial.</p>
+    <p>Su visión se centra en una Ecuador inclusivo, que logre avanzar de manera sostenible y que ofrezca a todos sus habitantes las mismas oportunidades de desarrollo y bienestar.</p>
+    <img src="ruta_a_la_fotografia_andrea.jpg" alt="Fotografía de Andrea González">
+    
+    <!-- Foro de Andrea González -->
+    <div class="foro">
+        <h3>Deja tu comentario sobre Andrea González</h3>
+        <textarea placeholder="Escribe tu comentario..."></textarea><br>
+        <button>Publicar Comentario</button>
+    </div>
+</div>
+
+<!-- Página de Inicio (Home) -->
+<div id="home" class="candidato-content">
+    <a href="javascript:void(0);" class="btn-candidato" onclick="mostrarCandidato('daniel')">Candidato 1 - Daniel Noboa</a>
+    <a href="javascript:void(0);" class="btn-candidato" onclick="mostrarCandidato('luisa')">Candidato 2 - Luisa González</a>
+    <a href="javascript:void(0);" class="btn-candidato" onclick="mostrarCandidato('andrea')">Candidato 3 - Andrea González</a>
+</div>
+
 <script>
     // Función para mostrar la biografía y ocultar las demás
     function mostrarCandidato(candidato) {
@@ -127,7 +154,7 @@
             candidatos[i].style.display = 'none';
         }
 
-        // Mostrar el candidato seleccionado
+        // Mostrar el candidato o la página de inicio seleccionada
         document.getElementById(candidato).style.display = 'block';
     }
 </script>
