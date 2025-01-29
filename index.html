@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografía de Daniel Noboa</title>
+    <title>Candidatos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,7 +20,7 @@
         .content {
             padding: 20px;
         }
-        .btn-home {
+        .btn-home, .btn-candidato {
             background-color: #0073e6;
             color: white;
             padding: 10px 20px;
@@ -28,8 +28,9 @@
             border-radius: 5px;
             display: inline-block;
             margin-bottom: 20px;
+            margin-right: 10px;
         }
-        .btn-home:hover {
+        .btn-home:hover, .btn-candidato:hover {
             background-color: #005bb5;
         }
         h1 {
@@ -38,6 +39,12 @@
         p {
             color: #555;
             line-height: 1.6;
+        }
+        .biografia img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -48,14 +55,28 @@
 </header>
 
 <div class="content">
-    <a href="#" class="btn-home">Home</a>
+    
+    <a href="#candidato1" class="btn-candidato">Candidato 1</a>
 
-    <h2>Sobre Daniel Noboa</h2>
-    <p>Daniel Noboa Pontón es un empresario ecuatoriano y candidato presidencial, conocido por su liderazgo y compromiso en la creación de soluciones para el crecimiento económico y social del país. Es hijo de Álvaro Noboa, un destacado empresario de Ecuador, y ha sido parte activa del desarrollo empresarial en varias industrias.</p>
+    <!-- Sección de Descripción Principal -->
+    <div id="home">
+        <h2>Bienvenido a la Página de Candidatos</h2>
+        <p>Este sitio está diseñado para presentar la biografía y las propuestas de diferentes candidatos presidenciales. A través de nuestra plataforma, podrás conocer en detalle a cada candidato, sus valores, su historia y sus planes para el futuro. Cada candidato tiene un perfil completo que incluye su biografía, su imagen y un enlace para acceder a más información sobre ellos.</p>
 
-    <p>Con una educación de alto nivel en el ámbito empresarial y una visión orientada al futuro, Daniel ha impulsado proyectos que buscan la innovación y la sostenibilidad en sectores clave para Ecuador. Su enfoque está en mejorar la infraestructura, la educación, y las oportunidades para los ciudadanos, con una clara intención de mejorar la calidad de vida en todo el país.</p>
+        <p>Haz clic en el botón "Candidato 1" para conocer más sobre Daniel Noboa y su propuesta para el país.</p>
+    </div>
 
-    <p>Durante su carrera, ha demostrado ser un defensor de la transparencia y la responsabilidad en la política, buscando siempre el bienestar de los ecuatorianos. A lo largo de su vida, ha acumulado una vasta experiencia en el ámbito empresarial, lo que le ha permitido desarrollar habilidades para liderar y tomar decisiones estratégicas en momentos clave.</p>
+    <!-- Sección de Candidato 1 -->
+    <div id="candidato1" class="biografia">
+        <h2>Biografía de Candidato 1 - Daniel Noboa</h2>
+        <p>Daniel Noboa Pontón es un empresario ecuatoriano y candidato presidencial, conocido por su liderazgo y compromiso en la creación de soluciones para el crecimiento económico y social del país. Es hijo de Álvaro Noboa, un destacado empresario de Ecuador, y ha sido parte activa del desarrollo empresarial en varias industrias.</p>
+
+        <p>Con una educación de alto nivel en el ámbito empresarial y una visión orientada al futuro, Daniel ha impulsado proyectos que buscan la innovación y la sostenibilidad en sectores clave para Ecuador. Su enfoque está en mejorar la infraestructura, la educación, y las oportunidades para los ciudadanos, con una clara intención de mejorar la calidad de vida en todo el país.</p>
+
+        <p>Durante su carrera, ha demostrado ser un defensor de la transparencia y la responsabilidad en la política, buscando siempre el bienestar de los ecuatorianos. A lo largo de su vida, ha acumulado una vasta experiencia en el ámbito empresarial, lo que le ha permitido desarrollar habilidades para liderar y tomar decisiones estratégicas en momentos clave.</p>
+
+        <img src="./President_Noboa_of_Ecuador_in_April_of_2024.jpg" alt="Fotografía de Daniel Noboa">
+    </div>
 </div>
 
 </body>
